@@ -21,15 +21,19 @@ import SearchIcon from "@/components/navbar/icons/SearchIcon.vue";
           <div class="px-2 font-bold text-2xl">AIFriends</div>
         </div>
 
-        <div class="navbar-center w-4/5 max-w-180 ml-42">
-          <div class="join w-4/5">
-            <input class="input join-item rounded-l-full w-4/5" placeholder="搜索你感兴趣的内容" />
-            <button class="btn join-item rounded-r-full gap-1">
-              <SearchIcon/>
+        <div class="navbar-center w-4/5 max-w-[480px] ml-4">
+          <div class="flex items-center w-full rounded-full overflow-hidden border border-gray-300 bg-white shadow-sm hover:shadow-md transition-shadow">
+            <input
+              class="input flex-1 border-none outline-none px-4 py-2.5 text-base focus:ring-0"
+              placeholder="搜索你感兴趣的内容"
+            />
+            <button class="btn bg-gray-100 hover:bg-gray-200 text-gray-700 border-none rounded-none px-5 py-2.5 transition-colors">
+              <SearchIcon class="w-4 h-4 mr-1"/>
               搜索
             </button>
           </div>
         </div>
+
 
         <div class="navbar-end">
           <button class="btn btn-ghost text-lg">登录</button>
