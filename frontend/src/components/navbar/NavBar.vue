@@ -36,7 +36,9 @@ import SearchIcon from "@/components/navbar/icons/SearchIcon.vue";
 
 
         <div class="navbar-end">
-          <button class="btn btn-ghost text-lg">登录</button>
+          <RouterLink :to="{name:'user-account-login-index'}"  active-class="btn-active" class="btn btn-ghost text-lg">
+          登录
+          </RouterLink>
         </div>
 
 
@@ -53,27 +55,27 @@ import SearchIcon from "@/components/navbar/icons/SearchIcon.vue";
         <ul class="menu w-full grow">
           <!-- List item -->
           <li>
-            <button class="is-drawer-close:tooltip is-drawer-close:tooltip-right py-3" data-tip="首页">
+            <RouterLink :to="{name:'homepage-index'}" active-class="menu-focus" class=" is-drawer-close:tooltip is-drawer-close:tooltip-right py-3" data-tip="首页">
               <!-- Home icon -->
               <HomepageIcon/>
              <span class="is-drawer-close:hidden text-base ml-2 whitespace-nowrap">首页</span>
-            </button>
+            </RouterLink>
           </li>
 
            <li>
-            <button class="is-drawer-close:tooltip is-drawer-close:tooltip-right py-3" data-tip="好友列表">
+            <RouterLink :to="{name:'friend-index'}" active-class="menu-focus" class="is-drawer-close:tooltip is-drawer-close:tooltip-right py-3" data-tip="好友列表">
               <!-- Home icon -->
               <FriendIcon/>
              <span class="is-drawer-close:hidden text-base ml-2 whitespace-nowrap">好友列表</span>
-            </button>
+            </RouterLink>
           </li>
 
           <li>
-            <button class="is-drawer-close:tooltip is-drawer-close:tooltip-right py-3" data-tip="创作">
+            <RouterLink :to ="{name:'create-index'}" active-class="menu-focus" class="is-drawer-close:tooltip is-drawer-close:tooltip-right py-3" data-tip="创作">
               <!-- Home icon -->
               <CreateIcon/>
              <span class="is-drawer-close:hidden text-base ml-2 whitespace-nowrap">创作</span>
-            </button>
+            </RouterLink>
           </li>
 
 
@@ -86,5 +88,18 @@ import SearchIcon from "@/components/navbar/icons/SearchIcon.vue";
 </template>
 
 <style scoped>
+  :deep(.menu li a.router-link-active),
+  :deep(.menu li a.router-link-exact-active) {
+    background-color: #e5e7eb !important;
+    color: inherit !important;
+  }
 
+  :deep(.menu li > a:hover) {
+    background-color: #e5e7eb;
+  }
+
+  :deep(.menu li > a:active) {
+    background-color: black !important;
+    color: white !important;
+  }
 </style>
