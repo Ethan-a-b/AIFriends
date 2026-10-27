@@ -32,7 +32,7 @@ class UpdateProfileView(APIView):
                     'result':'用户名已存在'
                 })
             if photo:
-                remove_old_photo(user.profle.photo)
+                remove_old_photo(user_profile.photo)
                 user_profile.photo = photo
             user_profile.profile = profile
             user_profile.update_time = now()
