@@ -7,7 +7,7 @@ import api from "@/js/http/api.js";
 import ChatField from "@/components/character/chat_field/ChatField.vue";
 import {useRouter} from "vue-router";
 
-const props = defineProps(['character','canEdit'])
+const props = defineProps(['character','canEdit','canRemoveFriend','friendId'])
 const emit = defineEmits(['remove'])
 const isHover = ref(false)
 const user = useUserStore()
@@ -24,6 +24,20 @@ async function handleRemoveCharacter() {
   } catch (err) {
 
   }
+}
+
+async function handleRemoveFriend() {
+  try {
+    const res = await api.post('/api/friend/remove/', {
+      friend_id: props.friendId,
+    })
+    if (res.data.result === 'success') {
+      emit('remove',props.friendId)
+    }
+  } catch (err) {
+
+  }
+
 }
 
 const chatFieldRef = useTemplateRef('chat-field-ref')
@@ -45,7 +59,7 @@ async function openChatField() {
         chatFieldRef.value.showModal()
       }
     } catch (err) {
-      console.log(err)
+
     }
   }
 }
@@ -62,11 +76,17 @@ async function openChatField() {
 
         <!-- 2. 右上角操作按钮 (调整了位置到右上角，使用 z-20 确保在最上层) -->
         <div v-if="canEdit && character.author.user_id === user.id" class="absolute right-2 top-2 flex flex-col gap-2 z-20">
-          <RouterLink :to="{name: 'update-character',params:{character_id:character.id}}" class="btn btn-circle btn-ghost bg-black/30 hover:bg-black/50 text-white backdrop-blur-sm">
+          <RouterLink @click.stop :to="{name: 'update-character',params:{character_id:character.id}}" class="btn btn-circle btn-ghost bg-black/30 hover:bg-black/50 text-white backdrop-blur-sm">
             <UpdateIcon/>
           </RouterLink>
-          <button @click="handleRemoveCharacter" class="btn btn-circle btn-ghost bg-black/30 hover:bg-black/50 text-white backdrop-blur-sm">
+          <button @click.stop="handleRemoveCharacter" class="btn btn-circle btn-ghost bg-black/30 hover:bg-black/50 text-white backdrop-blur-sm">
             <RemoveIcon/>
+          </button>
+        </div>
+
+        <div v-if="canRemoveFriend" class="absolute right-0 top-50">
+          <button @click.stop="handleRemoveFriend" class="btn btn-circle btn-ghost bg-black/30 hover:bg-black/50 text-white backdrop-blur-sm">
+            <RemoveIcon />
           </button>
         </div>
 
