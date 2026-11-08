@@ -3,3 +3,1564 @@ Unauthorized: /api/friend/message/chat/
 [08/Nov/2026 15:53:35] "POST /api/friend/message/chat/ HTTP/1.1" 401 10
 [08/Nov/2026 15:53:35,334] - Broken pipe from ('127.0.0.1', 62529)
 [08/Nov/2026 15:53:57] "POST /api/friend/message/chat/ HTTP/1.1" 200 750
+[08/Nov/2026 15:55:43] "POST /api/friend/message/chat/ HTTP/1.1" 200 533
+[08/Nov/2026 15:55:55] "POST /api/friend/message/chat/ HTTP/1.1" 200 480
+[08/Nov/2026 15:57:28] "POST /api/friend/message/chat/ HTTP/1.1" 200 5428
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "D:\Python\.venv\Lib\site-packages\django\utils\autoreload.py", line 354, in run
+    get_resolver().urlconf_module
+  File "D:\Python\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\resolvers.py", line 722, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Python\backend\backend\urls.py", line 23, in <module>
+    path('', include('web.urls')),
+             ~~~~~~~^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Python\backend\web\urls.py", line 10, in <module>
+    from web.views.friend.message.chat.chat import MessageChatView
+  File "D:\Python\backend\web\views\friend\message\chat\chat.py", line 56
+    total_tokens = 
+                   ^
+SyntaxError: invalid syntax
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\utils\autoreload.py", line 81, in wrapper
+    raise e from _url_module_exception
+  File "D:\Python\.venv\Lib\site-packages\django\utils\autoreload.py", line 66, in wrapper
+    fn(*args, **kwargs)
+    ~~^^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\core\management\commands\runserver.py", line 134, in inner_run
+    self.check(**check_kwargs)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\core\management\base.py", line 498, in check
+    all_issues = checks.run_checks(
+        app_configs=app_configs,
+    ...<2 lines>...
+        databases=databases,
+    )
+  File "D:\Python\.venv\Lib\site-packages\django\core\checks\registry.py", line 99, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "D:\Python\.venv\Lib\site-packages\django\core\checks\urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "D:\Python\.venv\Lib\site-packages\django\core\checks\urls.py", line 26, in check_resolver
+    return check_method()
+  File "D:\Python\.venv\Lib\site-packages\django\urls\resolvers.py", line 541, in check
+    for pattern in self.url_patterns:
+                   ^^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\resolvers.py", line 729, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+                       ^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\resolvers.py", line 722, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Python\backend\backend\urls.py", line 23, in <module>
+    path('', include('web.urls')),
+             ~~~~~~~^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Python\backend\web\urls.py", line 10, in <module>
+    from web.views.friend.message.chat.chat import MessageChatView
+  File "D:\Python\backend\web\views\friend\message\chat\chat.py", line 56
+    total_tokens = 
+                   ^
+SyntaxError: invalid syntax
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "D:\Python\.venv\Lib\site-packages\django\utils\autoreload.py", line 354, in run
+    get_resolver().urlconf_module
+  File "D:\Python\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\resolvers.py", line 722, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Python\backend\backend\urls.py", line 23, in <module>
+    path('', include('web.urls')),
+             ~~~~~~~^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Python\backend\web\urls.py", line 10, in <module>
+    from web.views.friend.message.chat.chat import MessageChatView
+  File "D:\Python\backend\web\views\friend\message\chat\chat.py", line 61
+    )
+    ^
+SyntaxError: positional argument follows keyword argument
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\utils\autoreload.py", line 81, in wrapper
+    raise e from _url_module_exception
+  File "D:\Python\.venv\Lib\site-packages\django\utils\autoreload.py", line 66, in wrapper
+    fn(*args, **kwargs)
+    ~~^^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\core\management\commands\runserver.py", line 134, in inner_run
+    self.check(**check_kwargs)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\core\management\base.py", line 498, in check
+    all_issues = checks.run_checks(
+        app_configs=app_configs,
+    ...<2 lines>...
+        databases=databases,
+    )
+  File "D:\Python\.venv\Lib\site-packages\django\core\checks\registry.py", line 99, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "D:\Python\.venv\Lib\site-packages\django\core\checks\urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "D:\Python\.venv\Lib\site-packages\django\core\checks\urls.py", line 26, in check_resolver
+    return check_method()
+  File "D:\Python\.venv\Lib\site-packages\django\urls\resolvers.py", line 541, in check
+    for pattern in self.url_patterns:
+                   ^^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\resolvers.py", line 729, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+                       ^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\resolvers.py", line 722, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Python\backend\backend\urls.py", line 23, in <module>
+    path('', include('web.urls')),
+             ~~~~~~~^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Python\backend\web\urls.py", line 10, in <module>
+    from web.views.friend.message.chat.chat import MessageChatView
+  File "D:\Python\backend\web\views\friend\message\chat\chat.py", line 61
+    )
+    ^
+SyntaxError: positional argument follows keyword argument
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "D:\Python\.venv\Lib\site-packages\django\utils\autoreload.py", line 354, in run
+    get_resolver().urlconf_module
+  File "D:\Python\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\resolvers.py", line 722, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Python\backend\backend\urls.py", line 23, in <module>
+    path('', include('web.urls')),
+             ~~~~~~~^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Python\backend\web\urls.py", line 10, in <module>
+    from web.views.friend.message.chat.chat import MessageChatView
+  File "D:\Python\backend\web\views\friend\message\chat\chat.py", line 61
+    )
+    ^
+SyntaxError: positional argument follows keyword argument
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\utils\autoreload.py", line 81, in wrapper
+    raise e from _url_module_exception
+  File "D:\Python\.venv\Lib\site-packages\django\utils\autoreload.py", line 66, in wrapper
+    fn(*args, **kwargs)
+    ~~^^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\core\management\commands\runserver.py", line 134, in inner_run
+    self.check(**check_kwargs)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\core\management\base.py", line 498, in check
+    all_issues = checks.run_checks(
+        app_configs=app_configs,
+    ...<2 lines>...
+        databases=databases,
+    )
+  File "D:\Python\.venv\Lib\site-packages\django\core\checks\registry.py", line 99, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "D:\Python\.venv\Lib\site-packages\django\core\checks\urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "D:\Python\.venv\Lib\site-packages\django\core\checks\urls.py", line 26, in check_resolver
+    return check_method()
+  File "D:\Python\.venv\Lib\site-packages\django\urls\resolvers.py", line 541, in check
+    for pattern in self.url_patterns:
+                   ^^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\resolvers.py", line 729, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+                       ^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\resolvers.py", line 722, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Python\backend\backend\urls.py", line 23, in <module>
+    path('', include('web.urls')),
+             ~~~~~~~^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Python\backend\web\urls.py", line 10, in <module>
+    from web.views.friend.message.chat.chat import MessageChatView
+  File "D:\Python\backend\web\views\friend\message\chat\chat.py", line 61
+    )
+    ^
+SyntaxError: positional argument follows keyword argument
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "D:\Python\.venv\Lib\site-packages\django\utils\autoreload.py", line 354, in run
+    get_resolver().urlconf_module
+  File "D:\Python\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\resolvers.py", line 722, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Python\backend\backend\urls.py", line 23, in <module>
+    path('', include('web.urls')),
+             ~~~~~~~^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Python\backend\web\urls.py", line 10, in <module>
+    from web.views.friend.message.chat.chat import MessageChatView
+  File "D:\Python\backend\web\views\friend\message\chat\chat.py", line 62
+    [for m in]
+     ^^^
+SyntaxError: invalid syntax
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\utils\autoreload.py", line 81, in wrapper
+    raise e from _url_module_exception
+  File "D:\Python\.venv\Lib\site-packages\django\utils\autoreload.py", line 66, in wrapper
+    fn(*args, **kwargs)
+    ~~^^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\core\management\commands\runserver.py", line 134, in inner_run
+    self.check(**check_kwargs)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\core\management\base.py", line 498, in check
+    all_issues = checks.run_checks(
+        app_configs=app_configs,
+    ...<2 lines>...
+        databases=databases,
+    )
+  File "D:\Python\.venv\Lib\site-packages\django\core\checks\registry.py", line 99, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "D:\Python\.venv\Lib\site-packages\django\core\checks\urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "D:\Python\.venv\Lib\site-packages\django\core\checks\urls.py", line 26, in check_resolver
+    return check_method()
+  File "D:\Python\.venv\Lib\site-packages\django\urls\resolvers.py", line 541, in check
+    for pattern in self.url_patterns:
+                   ^^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\resolvers.py", line 729, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+                       ^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\resolvers.py", line 722, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Python\backend\backend\urls.py", line 23, in <module>
+    path('', include('web.urls')),
+             ~~~~~~~^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Python\backend\web\urls.py", line 10, in <module>
+    from web.views.friend.message.chat.chat import MessageChatView
+  File "D:\Python\backend\web\views\friend\message\chat\chat.py", line 62
+    [for m in]
+     ^^^
+SyntaxError: invalid syntax
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "D:\Python\.venv\Lib\site-packages\django\utils\autoreload.py", line 354, in run
+    get_resolver().urlconf_module
+  File "D:\Python\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\resolvers.py", line 722, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Python\backend\backend\urls.py", line 23, in <module>
+    path('', include('web.urls')),
+             ~~~~~~~^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Python\backend\web\urls.py", line 10, in <module>
+    from web.views.friend.message.chat.chat import MessageChatView
+  File "D:\Python\backend\web\views\friend\message\chat\chat.py", line 62
+    [for m in input]
+     ^^^
+SyntaxError: invalid syntax
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\utils\autoreload.py", line 81, in wrapper
+    raise e from _url_module_exception
+  File "D:\Python\.venv\Lib\site-packages\django\utils\autoreload.py", line 66, in wrapper
+    fn(*args, **kwargs)
+    ~~^^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\core\management\commands\runserver.py", line 134, in inner_run
+    self.check(**check_kwargs)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\core\management\base.py", line 498, in check
+    all_issues = checks.run_checks(
+        app_configs=app_configs,
+    ...<2 lines>...
+        databases=databases,
+    )
+  File "D:\Python\.venv\Lib\site-packages\django\core\checks\registry.py", line 99, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "D:\Python\.venv\Lib\site-packages\django\core\checks\urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "D:\Python\.venv\Lib\site-packages\django\core\checks\urls.py", line 26, in check_resolver
+    return check_method()
+  File "D:\Python\.venv\Lib\site-packages\django\urls\resolvers.py", line 541, in check
+    for pattern in self.url_patterns:
+                   ^^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\resolvers.py", line 729, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+                       ^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\resolvers.py", line 722, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Python\backend\backend\urls.py", line 23, in <module>
+    path('', include('web.urls')),
+             ~~~~~~~^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Python\backend\web\urls.py", line 10, in <module>
+    from web.views.friend.message.chat.chat import MessageChatView
+  File "D:\Python\backend\web\views\friend\message\chat\chat.py", line 62
+    [for m in input]
+     ^^^
+SyntaxError: invalid syntax
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "D:\Python\.venv\Lib\site-packages\django\utils\autoreload.py", line 354, in run
+    get_resolver().urlconf_module
+  File "D:\Python\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\resolvers.py", line 722, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Python\backend\backend\urls.py", line 23, in <module>
+    path('', include('web.urls')),
+             ~~~~~~~^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Python\backend\web\urls.py", line 10, in <module>
+    from web.views.friend.message.chat.chat import MessageChatView
+  File "D:\Python\backend\web\views\friend\message\chat\chat.py", line 62
+    [for m in inputs['messages']]
+     ^^^
+SyntaxError: invalid syntax
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\utils\autoreload.py", line 81, in wrapper
+    raise e from _url_module_exception
+  File "D:\Python\.venv\Lib\site-packages\django\utils\autoreload.py", line 66, in wrapper
+    fn(*args, **kwargs)
+    ~~^^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\core\management\commands\runserver.py", line 134, in inner_run
+    self.check(**check_kwargs)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\core\management\base.py", line 498, in check
+    all_issues = checks.run_checks(
+        app_configs=app_configs,
+    ...<2 lines>...
+        databases=databases,
+    )
+  File "D:\Python\.venv\Lib\site-packages\django\core\checks\registry.py", line 99, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "D:\Python\.venv\Lib\site-packages\django\core\checks\urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "D:\Python\.venv\Lib\site-packages\django\core\checks\urls.py", line 26, in check_resolver
+    return check_method()
+  File "D:\Python\.venv\Lib\site-packages\django\urls\resolvers.py", line 541, in check
+    for pattern in self.url_patterns:
+                   ^^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\resolvers.py", line 729, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+                       ^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\resolvers.py", line 722, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Python\backend\backend\urls.py", line 23, in <module>
+    path('', include('web.urls')),
+             ~~~~~~~^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Python\backend\web\urls.py", line 10, in <module>
+    from web.views.friend.message.chat.chat import MessageChatView
+  File "D:\Python\backend\web\views\friend\message\chat\chat.py", line 62
+    [for m in inputs['messages']]
+     ^^^
+SyntaxError: invalid syntax
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "D:\Python\.venv\Lib\site-packages\django\utils\autoreload.py", line 354, in run
+    get_resolver().urlconf_module
+  File "D:\Python\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\resolvers.py", line 722, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Python\backend\backend\urls.py", line 23, in <module>
+    path('', include('web.urls')),
+             ~~~~~~~^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Python\backend\web\urls.py", line 10, in <module>
+    from web.views.friend.message.chat.chat import MessageChatView
+  File "D:\Python\backend\web\views\friend\message\chat\chat.py", line 62
+    [m.model.for m in inputs['messages']]
+             ^^^
+SyntaxError: invalid syntax
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\utils\autoreload.py", line 81, in wrapper
+    raise e from _url_module_exception
+  File "D:\Python\.venv\Lib\site-packages\django\utils\autoreload.py", line 66, in wrapper
+    fn(*args, **kwargs)
+    ~~^^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\core\management\commands\runserver.py", line 134, in inner_run
+    self.check(**check_kwargs)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\core\management\base.py", line 498, in check
+    all_issues = checks.run_checks(
+        app_configs=app_configs,
+    ...<2 lines>...
+        databases=databases,
+    )
+  File "D:\Python\.venv\Lib\site-packages\django\core\checks\registry.py", line 99, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "D:\Python\.venv\Lib\site-packages\django\core\checks\urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "D:\Python\.venv\Lib\site-packages\django\core\checks\urls.py", line 26, in check_resolver
+    return check_method()
+  File "D:\Python\.venv\Lib\site-packages\django\urls\resolvers.py", line 541, in check
+    for pattern in self.url_patterns:
+                   ^^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\resolvers.py", line 729, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+                       ^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\resolvers.py", line 722, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Python\backend\backend\urls.py", line 23, in <module>
+    path('', include('web.urls')),
+             ~~~~~~~^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Python\backend\web\urls.py", line 10, in <module>
+    from web.views.friend.message.chat.chat import MessageChatView
+  File "D:\Python\backend\web\views\friend\message\chat\chat.py", line 62
+    [m.model.for m in inputs['messages']]
+             ^^^
+SyntaxError: invalid syntax
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "D:\Python\.venv\Lib\site-packages\django\utils\autoreload.py", line 354, in run
+    get_resolver().urlconf_module
+  File "D:\Python\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\resolvers.py", line 722, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Python\backend\backend\urls.py", line 23, in <module>
+    path('', include('web.urls')),
+             ~~~~~~~^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Python\backend\web\urls.py", line 10, in <module>
+    from web.views.friend.message.chat.chat import MessageChatView
+  File "D:\Python\backend\web\views\friend\message\chat\chat.py", line 62
+    [m.model_dumpfor m in inputs['messages']]
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\utils\autoreload.py", line 81, in wrapper
+    raise e from _url_module_exception
+  File "D:\Python\.venv\Lib\site-packages\django\utils\autoreload.py", line 66, in wrapper
+    fn(*args, **kwargs)
+    ~~^^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\core\management\commands\runserver.py", line 134, in inner_run
+    self.check(**check_kwargs)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\core\management\base.py", line 498, in check
+    all_issues = checks.run_checks(
+        app_configs=app_configs,
+    ...<2 lines>...
+        databases=databases,
+    )
+  File "D:\Python\.venv\Lib\site-packages\django\core\checks\registry.py", line 99, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "D:\Python\.venv\Lib\site-packages\django\core\checks\urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "D:\Python\.venv\Lib\site-packages\django\core\checks\urls.py", line 26, in check_resolver
+    return check_method()
+  File "D:\Python\.venv\Lib\site-packages\django\urls\resolvers.py", line 541, in check
+    for pattern in self.url_patterns:
+                   ^^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\resolvers.py", line 729, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+                       ^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\resolvers.py", line 722, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Python\backend\backend\urls.py", line 23, in <module>
+    path('', include('web.urls')),
+             ~~~~~~~^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Python\backend\web\urls.py", line 10, in <module>
+    from web.views.friend.message.chat.chat import MessageChatView
+  File "D:\Python\backend\web\views\friend\message\chat\chat.py", line 62
+    [m.model_dumpfor m in inputs['messages']]
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "D:\Python\.venv\Lib\site-packages\django\utils\autoreload.py", line 354, in run
+    get_resolver().urlconf_module
+  File "D:\Python\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\resolvers.py", line 722, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Python\backend\backend\urls.py", line 23, in <module>
+    path('', include('web.urls')),
+             ~~~~~~~^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Python\backend\web\urls.py", line 10, in <module>
+    from web.views.friend.message.chat.chat import MessageChatView
+  File "D:\Python\backend\web\views\friend\message\chat\chat.py", line 65
+    output = 
+    ^^^^^^^^
+SyntaxError: expected argument value expression
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\utils\autoreload.py", line 81, in wrapper
+    raise e from _url_module_exception
+  File "D:\Python\.venv\Lib\site-packages\django\utils\autoreload.py", line 66, in wrapper
+    fn(*args, **kwargs)
+    ~~^^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\core\management\commands\runserver.py", line 134, in inner_run
+    self.check(**check_kwargs)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\core\management\base.py", line 498, in check
+    all_issues = checks.run_checks(
+        app_configs=app_configs,
+    ...<2 lines>...
+        databases=databases,
+    )
+  File "D:\Python\.venv\Lib\site-packages\django\core\checks\registry.py", line 99, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "D:\Python\.venv\Lib\site-packages\django\core\checks\urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "D:\Python\.venv\Lib\site-packages\django\core\checks\urls.py", line 26, in check_resolver
+    return check_method()
+  File "D:\Python\.venv\Lib\site-packages\django\urls\resolvers.py", line 541, in check
+    for pattern in self.url_patterns:
+                   ^^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\resolvers.py", line 729, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+                       ^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\resolvers.py", line 722, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Python\backend\backend\urls.py", line 23, in <module>
+    path('', include('web.urls')),
+             ~~~~~~~^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Python\backend\web\urls.py", line 10, in <module>
+    from web.views.friend.message.chat.chat import MessageChatView
+  File "D:\Python\backend\web\views\friend\message\chat\chat.py", line 65
+    output = 
+    ^^^^^^^^
+SyntaxError: expected argument value expression
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python\backend\web\models\friend.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+Unauthorized: /api/user/account/get_user_info/
+[08/Nov/2026 16:14:08] "GET /api/user/account/get_user_info/ HTTP/1.1" 401 58
+Unauthorized: /api/user/account/refresh_token/
+[08/Nov/2026 16:14:08] "OPTIONS /api/user/account/refresh_token/ HTTP/1.1" 200 0
+[08/Nov/2026 16:14:08] "POST /api/user/account/refresh_token/ HTTP/1.1" 401 35
+[08/Nov/2026 16:14:08] "GET /api/homepage/index/?items_count=0&search_query= HTTP/1.1" 200 991
+[08/Nov/2026 16:14:08] "GET /api/homepage/index/?items_count=3&search_query= HTTP/1.1" 200 36
+[08/Nov/2026 16:14:13] "OPTIONS /api/user/account/login/ HTTP/1.1" 200 0
+[08/Nov/2026 16:14:14] "POST /api/user/account/login/ HTTP/1.1" 200 397
+[08/Nov/2026 16:14:14] "OPTIONS /api/homepage/index/?items_count=0&search_query= HTTP/1.1" 200 0
+[08/Nov/2026 16:14:14] "GET /api/homepage/index/?items_count=0&search_query= HTTP/1.1" 200 991
+[08/Nov/2026 16:14:14] "OPTIONS /api/homepage/index/?items_count=3&search_query= HTTP/1.1" 200 0
+[08/Nov/2026 16:14:14] "GET /api/homepage/index/?items_count=3&search_query= HTTP/1.1" 200 36
+[08/Nov/2026 16:14:14] "OPTIONS /api/friend/get_or_create/ HTTP/1.1" 200 0
+[08/Nov/2026 16:14:14] "POST /api/friend/get_or_create/ HTTP/1.1" 200 366
+Traceback (most recent call last):
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\wsgiref\handlers.py", line 138, in run
+    self.finish_response()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\Python\.venv\Lib\site-packages\django\core\servers\basehttp.py", line 175, in finish_response
+    super().finish_response()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\wsgiref\handlers.py", line 183, in finish_response
+    for data in self.result:
+                ^^^^^^^^^^^
+  File "D:\Python\backend\web\views\friend\message\chat\chat.py", line 55, in event_stream
+    input_token = full_usage.get('input_token',0)
+                  ^^^^^^^^^^
+NameError: name 'full_usage' is not defined. Did you mean: 'final_usage'?
+[08/Nov/2026 16:14:33] "GET /admin/ HTTP/1.1" 200 9367
+[08/Nov/2026 16:14:34] "GET /static/admin/css/responsive.css HTTP/1.1" 200 15025
+[08/Nov/2026 16:14:34] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 442
+[08/Nov/2026 16:14:34] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 480
+[08/Nov/2026 16:14:34] "GET /static/admin/js/theme.js HTTP/1.1" 200 1708
+[08/Nov/2026 16:14:34] "GET /static/admin/css/base.css HTTP/1.1" 200 24538
+[08/Nov/2026 16:14:34] "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 3583
+[08/Nov/2026 16:14:34] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2814
+[08/Nov/2026 16:14:34] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3208
+[08/Nov/2026 16:14:34] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 593
+[08/Nov/2026 16:14:34] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 978
+[08/Nov/2026 16:14:34] "GET /favicon.ico HTTP/1.1" 200 480
+[08/Nov/2026 16:14:36] "GET /admin/web/message/ HTTP/1.1" 200 9804
+[08/Nov/2026 16:14:36] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 349
+[08/Nov/2026 16:14:36] "GET /static/admin/js/core.js HTTP/1.1" 200 6432
+[08/Nov/2026 16:14:36] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6216
+[08/Nov/2026 16:14:36] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 11452
+[08/Nov/2026 16:14:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[08/Nov/2026 16:14:36] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1575
+[08/Nov/2026 16:14:36] "GET /static/admin/js/actions.js HTTP/1.1" 200 8999
+[08/Nov/2026 16:14:36] "GET /static/admin/js/urlify.js HTTP/1.1" 200 9985
+[08/Nov/2026 16:14:36] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+[08/Nov/2026 16:14:36] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+[08/Nov/2026 16:14:36] "GET /static/admin/js/filters.js HTTP/1.1" 200 1099
+[08/Nov/2026 16:14:36] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 480
+[08/Nov/2026 16:14:36] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 593
+[08/Nov/2026 16:14:36] "GET /favicon.ico HTTP/1.1" 200 480
+[08/Nov/2026 16:14:42] "GET /admin/web/friend/ HTTP/1.1" 200 11779
+[08/Nov/2026 16:14:42] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[08/Nov/2026 16:14:42] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 480
+[08/Nov/2026 16:14:42] "GET /favicon.ico HTTP/1.1" 200 480
+[08/Nov/2026 16:14:42] "GET /admin/web/message/ HTTP/1.1" 200 9804
+[08/Nov/2026 16:14:42] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[08/Nov/2026 16:14:42] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 480
+[08/Nov/2026 16:14:42] "GET /favicon.ico HTTP/1.1" 200 480
+[08/Nov/2026 16:14:59] "GET /admin/web/message/ HTTP/1.1" 200 9804
+[08/Nov/2026 16:14:59] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[08/Nov/2026 16:14:59] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 480
+[08/Nov/2026 16:14:59] "GET /favicon.ico HTTP/1.1" 200 480
+[08/Nov/2026 16:14:59] "GET /admin/web/message/ HTTP/1.1" 200 9804
+[08/Nov/2026 16:14:59] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[08/Nov/2026 16:14:59] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 480
+[08/Nov/2026 16:14:59] "GET /favicon.ico HTTP/1.1" 200 480
+[08/Nov/2026 16:14:59] "GET /admin/web/message/ HTTP/1.1" 200 9804
+[08/Nov/2026 16:14:59] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[08/Nov/2026 16:15:00] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 480
+[08/Nov/2026 16:15:00] "GET /favicon.ico HTTP/1.1" 200 480
+[08/Nov/2026 16:15:00] "GET /admin/web/message/ HTTP/1.1" 200 9804
+[08/Nov/2026 16:15:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[08/Nov/2026 16:15:00] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 480
+[08/Nov/2026 16:15:00] "GET /favicon.ico HTTP/1.1" 200 480
+[08/Nov/2026 16:15:00] "GET /admin/web/message/ HTTP/1.1" 200 9804
+[08/Nov/2026 16:15:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[08/Nov/2026 16:15:00] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 480
+[08/Nov/2026 16:15:00] "GET /favicon.ico HTTP/1.1" 200 480
+[08/Nov/2026 16:15:00] "GET /admin/web/message/ HTTP/1.1" 200 9804
+[08/Nov/2026 16:15:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[08/Nov/2026 16:15:00] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 480
+[08/Nov/2026 16:15:00] "GET /favicon.ico HTTP/1.1" 200 480
+[08/Nov/2026 16:15:00] "GET /admin/web/message/ HTTP/1.1" 200 9804
+[08/Nov/2026 16:15:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[08/Nov/2026 16:15:00] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 480
+[08/Nov/2026 16:15:00] "GET /favicon.ico HTTP/1.1" 200 480
+[08/Nov/2026 16:15:00] "GET /admin/web/message/ HTTP/1.1" 200 9804
+[08/Nov/2026 16:15:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[08/Nov/2026 16:15:00] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 480
+[08/Nov/2026 16:15:00] "GET /favicon.ico HTTP/1.1" 200 480
+[08/Nov/2026 16:15:01] "GET /admin/web/message/ HTTP/1.1" 200 9804
+[08/Nov/2026 16:15:01] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[08/Nov/2026 16:15:01] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 480
+[08/Nov/2026 16:15:01] "GET /favicon.ico HTTP/1.1" 200 480
+[08/Nov/2026 16:15:03] "GET /admin/web/friend/ HTTP/1.1" 200 11779
+[08/Nov/2026 16:15:03] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[08/Nov/2026 16:15:03] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 480
+[08/Nov/2026 16:15:03] "GET /favicon.ico HTTP/1.1" 200 480
+[08/Nov/2026 16:15:03] "GET /admin/web/message/ HTTP/1.1" 200 9804
+[08/Nov/2026 16:15:03] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[08/Nov/2026 16:15:03] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 480
+[08/Nov/2026 16:15:03] "GET /favicon.ico HTTP/1.1" 200 480
+[08/Nov/2026 16:15:04] "GET /admin/web/message/ HTTP/1.1" 200 9804
+[08/Nov/2026 16:15:04] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[08/Nov/2026 16:15:04] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 480
+[08/Nov/2026 16:15:04] "GET /favicon.ico HTTP/1.1" 200 480
+[08/Nov/2026 16:15:05] "GET /admin/web/message/ HTTP/1.1" 200 9804
+[08/Nov/2026 16:15:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[08/Nov/2026 16:15:05] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 480
+[08/Nov/2026 16:15:05] "GET /favicon.ico HTTP/1.1" 200 480
+[08/Nov/2026 16:15:05] "GET /admin/web/message/ HTTP/1.1" 200 9804
+[08/Nov/2026 16:15:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[08/Nov/2026 16:15:05] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 480
+[08/Nov/2026 16:15:05] "GET /favicon.ico HTTP/1.1" 200 480
+[08/Nov/2026 16:15:05] "GET /admin/web/message/ HTTP/1.1" 200 9804
+[08/Nov/2026 16:15:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[08/Nov/2026 16:15:05] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 480
+[08/Nov/2026 16:15:05] "GET /favicon.ico HTTP/1.1" 200 480
+[08/Nov/2026 16:15:05] "GET /admin/web/message/ HTTP/1.1" 200 9804
+[08/Nov/2026 16:15:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[08/Nov/2026 16:15:05] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 480
+[08/Nov/2026 16:15:05] "GET /favicon.ico HTTP/1.1" 200 480
+[08/Nov/2026 16:15:14] "GET /admin/web/message/ HTTP/1.1" 200 9804
+[08/Nov/2026 16:15:14] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[08/Nov/2026 16:15:14] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 480
+[08/Nov/2026 16:15:14] "GET /favicon.ico HTTP/1.1" 200 480
+[08/Nov/2026 16:15:14] "GET /admin/web/message/ HTTP/1.1" 200 9804
+[08/Nov/2026 16:15:14] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[08/Nov/2026 16:15:14] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 480
+[08/Nov/2026 16:15:14] "GET /favicon.ico HTTP/1.1" 200 480
+[08/Nov/2026 16:15:14] "GET /admin/web/message/ HTTP/1.1" 200 9804
+[08/Nov/2026 16:15:14] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[08/Nov/2026 16:15:14] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 480
+[08/Nov/2026 16:15:14] "GET /favicon.ico HTTP/1.1" 200 480
+[08/Nov/2026 16:15:14] "GET /admin/web/message/ HTTP/1.1" 200 9804
+[08/Nov/2026 16:15:14] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[08/Nov/2026 16:15:14] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 480
+[08/Nov/2026 16:15:14] "GET /favicon.ico HTTP/1.1" 200 480
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+Traceback (most recent call last):
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\wsgiref\handlers.py", line 138, in run
+    self.finish_response()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\Python\.venv\Lib\site-packages\django\core\servers\basehttp.py", line 175, in finish_response
+    super().finish_response()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\wsgiref\handlers.py", line 183, in finish_response
+    for data in self.result:
+                ^^^^^^^^^^^
+  File "D:\Python\backend\web\views\friend\message\chat\chat.py", line 58, in event_stream
+    Message.objects.create(
+    ~~~~~~~~~~~~~~~~~~~~~~^
+        friend = friend,
+        ^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    
+    
+    )
+    ^
+  File "D:\Python\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\db\models\query.py", line 750, in create
+    obj = self.model(**kwargs)
+  File "D:\Python\.venv\Lib\site-packages\django\db\models\base.py", line 610, in __init__
+    raise TypeError(
+    ...<2 lines>...
+    )
+TypeError: Message() got unexpected keyword arguments: 'input_token'
+[08/Nov/2026 16:19:13] "GET /admin/web/message/ HTTP/1.1" 200 9804
+[08/Nov/2026 16:19:13] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[08/Nov/2026 16:19:14] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 480
+[08/Nov/2026 16:19:14] "GET /favicon.ico HTTP/1.1" 200 480
+[08/Nov/2026 16:19:14] "GET /admin/web/message/ HTTP/1.1" 200 9804
+[08/Nov/2026 16:19:14] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[08/Nov/2026 16:19:14] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 480
+[08/Nov/2026 16:19:14] "GET /favicon.ico HTTP/1.1" 200 480
+[08/Nov/2026 16:19:14] "GET /admin/web/message/ HTTP/1.1" 200 9804
+[08/Nov/2026 16:19:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[08/Nov/2026 16:19:15] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 480
+[08/Nov/2026 16:19:15] "GET /favicon.ico HTTP/1.1" 200 480
+[08/Nov/2026 16:19:15] "GET /admin/web/message/ HTTP/1.1" 200 9804
+[08/Nov/2026 16:19:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[08/Nov/2026 16:19:15] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 480
+[08/Nov/2026 16:19:15] "GET /favicon.ico HTTP/1.1" 200 480
+[08/Nov/2026 16:19:15] "GET /admin/web/message/ HTTP/1.1" 200 9804
+[08/Nov/2026 16:19:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[08/Nov/2026 16:19:15] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 480
+[08/Nov/2026 16:19:15] "GET /favicon.ico HTTP/1.1" 200 480
+[08/Nov/2026 16:19:15] "GET /admin/web/message/ HTTP/1.1" 200 9804
+[08/Nov/2026 16:19:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[08/Nov/2026 16:19:15] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 480
+[08/Nov/2026 16:19:15] "GET /favicon.ico HTTP/1.1" 200 480
+[08/Nov/2026 16:19:17] "GET /admin/web/friend/ HTTP/1.1" 200 11779
+[08/Nov/2026 16:19:17] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[08/Nov/2026 16:19:17] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 480
+[08/Nov/2026 16:19:17] "GET /favicon.ico HTTP/1.1" 200 480
+[08/Nov/2026 16:19:17] "GET /admin/web/message/ HTTP/1.1" 200 9804
+[08/Nov/2026 16:19:17] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[08/Nov/2026 16:19:17] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 480
+[08/Nov/2026 16:19:17] "GET /favicon.ico HTTP/1.1" 200 480
+[08/Nov/2026 16:19:18] "GET /admin/web/message/ HTTP/1.1" 200 9804
+[08/Nov/2026 16:19:18] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[08/Nov/2026 16:19:18] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 480
+[08/Nov/2026 16:19:19] "GET /favicon.ico HTTP/1.1" 200 480
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python\backend\web\views\friend\message\chat\chat.py changed, reloading.
+Watching for file changes with StatReloader
+[08/Nov/2026 16:22:19] "POST /api/friend/message/chat/ HTTP/1.1" 200 621
+[08/Nov/2026 16:22:24] "GET /admin/web/message/ HTTP/1.1" 200 11187
+[08/Nov/2026 16:22:24] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[08/Nov/2026 16:22:24] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 480
+[08/Nov/2026 16:22:24] "GET /favicon.ico HTTP/1.1" 200 480
+[08/Nov/2026 16:22:38] "GET /admin/web/message/1/change/ HTTP/1.1" 200 16618
+[08/Nov/2026 16:22:38] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[08/Nov/2026 16:22:38] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 480
+[08/Nov/2026 16:22:38] "GET /static/admin/css/widgets.css HTTP/1.1" 200 12094
+[08/Nov/2026 16:22:38] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 27979
+[08/Nov/2026 16:22:38] "GET /static/admin/js/calendar.js HTTP/1.1" 200 12223
+[08/Nov/2026 16:22:38] "GET /static/admin/css/forms.css HTTP/1.1" 200 7951
+[08/Nov/2026 16:22:38] "GET /static/admin/js/change_form.js HTTP/1.1" 200 677
+[08/Nov/2026 16:22:38] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 726
+[08/Nov/2026 16:22:38] "GET /static/admin/img/search.svg HTTP/1.1" 200 607
+[08/Nov/2026 16:22:38] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1112
+[08/Nov/2026 16:22:38] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 805
+[08/Nov/2026 16:22:38] "GET /favicon.ico HTTP/1.1" 200 480
+D:\Python\backend\web\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "D:\Python\.venv\Lib\site-packages\django\utils\autoreload.py", line 354, in run
+    get_resolver().urlconf_module
+  File "D:\Python\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\resolvers.py", line 722, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Python\backend\backend\urls.py", line 23, in <module>
+    path('', include('web.urls')),
+             ~~~~~~~^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 755, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 893, in get_code
+  File "<frozen importlib._bootstrap_external>", line 823, in source_to_code
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Python\backend\web\urls.py", line 39
+    path('api/')
+    ^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\utils\autoreload.py", line 81, in wrapper
+    raise e from _url_module_exception
+  File "D:\Python\.venv\Lib\site-packages\django\utils\autoreload.py", line 66, in wrapper
+    fn(*args, **kwargs)
+    ~~^^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\core\management\commands\runserver.py", line 134, in inner_run
+    self.check(**check_kwargs)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\core\management\base.py", line 498, in check
+    all_issues = checks.run_checks(
+        app_configs=app_configs,
+    ...<2 lines>...
+        databases=databases,
+    )
+  File "D:\Python\.venv\Lib\site-packages\django\core\checks\registry.py", line 99, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "D:\Python\.venv\Lib\site-packages\django\core\checks\urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "D:\Python\.venv\Lib\site-packages\django\core\checks\urls.py", line 26, in check_resolver
+    return check_method()
+  File "D:\Python\.venv\Lib\site-packages\django\urls\resolvers.py", line 541, in check
+    for pattern in self.url_patterns:
+                   ^^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\resolvers.py", line 729, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+                       ^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\resolvers.py", line 722, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Python\backend\backend\urls.py", line 23, in <module>
+    path('', include('web.urls')),
+             ~~~~~~~^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 755, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 893, in get_code
+  File "<frozen importlib._bootstrap_external>", line 823, in source_to_code
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Python\backend\web\urls.py", line 39
+    path('api/')
+    ^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+D:\Python\backend\web\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "D:\Python\.venv\Lib\site-packages\django\utils\autoreload.py", line 354, in run
+    get_resolver().urlconf_module
+  File "D:\Python\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\resolvers.py", line 722, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Python\backend\backend\urls.py", line 23, in <module>
+    path('', include('web.urls')),
+             ~~~~~~~^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 755, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 893, in get_code
+  File "<frozen importlib._bootstrap_external>", line 823, in source_to_code
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Python\backend\web\urls.py", line 39
+    path('api/friend/message/')
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\utils\autoreload.py", line 81, in wrapper
+    raise e from _url_module_exception
+  File "D:\Python\.venv\Lib\site-packages\django\utils\autoreload.py", line 66, in wrapper
+    fn(*args, **kwargs)
+    ~~^^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\core\management\commands\runserver.py", line 134, in inner_run
+    self.check(**check_kwargs)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\core\management\base.py", line 498, in check
+    all_issues = checks.run_checks(
+        app_configs=app_configs,
+    ...<2 lines>...
+        databases=databases,
+    )
+  File "D:\Python\.venv\Lib\site-packages\django\core\checks\registry.py", line 99, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "D:\Python\.venv\Lib\site-packages\django\core\checks\urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "D:\Python\.venv\Lib\site-packages\django\core\checks\urls.py", line 26, in check_resolver
+    return check_method()
+  File "D:\Python\.venv\Lib\site-packages\django\urls\resolvers.py", line 541, in check
+    for pattern in self.url_patterns:
+                   ^^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\resolvers.py", line 729, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+                       ^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\resolvers.py", line 722, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Python\backend\backend\urls.py", line 23, in <module>
+    path('', include('web.urls')),
+             ~~~~~~~^^^^^^^^^^^^
+  File "D:\Python\.venv\Lib\site-packages\django\urls\conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+  File "C:\Users\34338\AppData\Local\Programs\Python\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 755, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 893, in get_code
+  File "<frozen importlib._bootstrap_external>", line 823, in source_to_code
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Python\backend\web\urls.py", line 39
+    path('api/friend/message/')
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+D:\Python\backend\web\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Unauthorized: /api/friend/message/get_history/
+[08/Nov/2026 16:40:02] "GET /api/friend/message/get_history/ HTTP/1.1" 401 5162
+[08/Nov/2026 16:40:02] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 480
+[08/Nov/2026 16:40:02] "GET /favicon.ico HTTP/1.1" 200 480
+[08/Nov/2026 16:40:02] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 200 540434
