@@ -57,7 +57,7 @@ const router = createRouter({
     },
 
     {
-      path:'/user/account//login/',
+      path:'/user/account/login/',
       component:LoginIndex,
       name:'user-account-login-index',
       meta:{
