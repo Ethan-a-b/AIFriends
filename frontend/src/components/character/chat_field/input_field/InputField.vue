@@ -78,11 +78,19 @@ defineExpose({
       <!-- 右侧按钮区 -->
       <div class="flex items-center gap-1 ml-2">
 
-        <button class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-white/20 transition-colors cursor-pointer">
+        <button type="button" class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-white/20 transition-colors cursor-pointer">
           <MicIcon />
         </button>
 
-        <button @click="handleSend" class="w-8 h-8 flex items-center justify-center rounded-full bg-indigo-500 hover:bg-indigo-400 text-white transition-colors cursor-pointer">
+        <button
+          type="button"
+          :disabled="!message.trim()"
+          @click="handleSend"
+          class="w-8 h-8 flex items-center justify-center rounded-full text-white transition-all duration-200"
+          :class="message.trim()
+            ? 'bg-gradient-to-br from-indigo-400 to-violet-500 shadow-[0_0_12px_rgba(129,140,248,0.65)] hover:from-indigo-300 hover:to-violet-400 cursor-pointer'
+            : 'bg-white/10 text-white/40 cursor-not-allowed'"
+        >
           <SendIcon />
         </button>
 
