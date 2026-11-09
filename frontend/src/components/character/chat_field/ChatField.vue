@@ -61,6 +61,7 @@ defineExpose({
       <button
         @click="modalRef.close()"
         class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 z-30 border-0 bg-black/25 text-white/80 hover:bg-black/45 hover:text-white"
+        title="返回"
       >✕</button>
 
       <ChatHistory
