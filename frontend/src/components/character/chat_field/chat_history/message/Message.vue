@@ -15,7 +15,7 @@ const user = useUserStore()
         </div>
       </div>
       <div class="chat-bubble max-w-[78%] rounded-2xl rounded-tl-sm bg-white/85 text-neutral-800 shadow-sm backdrop-blur-sm leading-relaxed">
-        <span v-if="message.content" class="whitespace-pre-wrap">{{ message.content }}</span>
+        <span v-if="message.content" class="whitespace-pre-wrap break-all">{{ message.content }}</span>
         <span v-else class="typing-dots"><i></i><i></i><i></i></span>
       </div>
     </div>
@@ -26,7 +26,7 @@ const user = useUserStore()
         </div>
       </div>
       <div class="chat-bubble max-w-[78%] rounded-2xl rounded-tr-sm border-0 bg-gradient-to-br from-indigo-500 to-violet-500 text-white shadow-sm leading-relaxed">
-        <span class="whitespace-pre-wrap">{{ message.content }}</span>
+        <span class="whitespace-pre-wrap break-all">{{ message.content }}</span>
       </div>
     </div>
   </div>
