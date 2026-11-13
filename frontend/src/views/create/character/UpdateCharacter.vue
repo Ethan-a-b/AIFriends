@@ -16,9 +16,11 @@ const route = useRoute()
 const characterId = route.params.character_id
 const character = ref(null)
 
+const loadError = ref('')
+
 onMounted(async()=>{
   try {
-    const res = await api.get('api/create/character/get_single/',{
+    const res = await api.get('/api/create/character/get_single/',{
       params: {
         character_id: characterId,
       }
@@ -26,9 +28,20 @@ onMounted(async()=>{
     const data = res.data
     if (data.result === 'success') {
       character.value = data.character
+    } else {
+      loadError.value = data.result || '角色加载失败'
     }
   } catch(err) {
-
+    if (err.response && err.response.status === 401) {
+      router.push({
+        name: 'user-account-login-index',
+        query: { redirect: route.fullPath },
+      })
+    } else if (err.response && err.response.status === 404) {
+      loadError.value = '角色不存在或已被删除'
+    } else {
+      loadError.value = '角色加载失败，请稍后重试'
+    }
   }
 
 })
@@ -92,7 +105,18 @@ async function handleUpdate() {
 </script>
 
 <template>
-  <div v-if="character" class="flex justify-center">
+  <div v-if="loadError" class="flex justify-center mt-16">
+    <div class="card w-120 bg-base-200 shadow-sm">
+      <div class="card-body items-center text-center">
+        <p class="text-base-content/70">{{ loadError }}</p>
+        <button @click="router.push({ name: 'create-index' })" class="btn btn-neutral mt-4">
+          返回我的角色
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div v-else-if="character" class="flex justify-center">
     <div class="card w-120 bg-base-200 shadow-sm mt-16">
       <div class="card-body">
         <h3 class="text-lg font-bold my-4">更新角色</h3>
