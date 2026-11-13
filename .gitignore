@@ -7,3 +7,5 @@ staticfiles/
 static/
 *.env
 *.log
+backend/web/documents/data.txt
+backend/web/documents/lancedb_storage/
