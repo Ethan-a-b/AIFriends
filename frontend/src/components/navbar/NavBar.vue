@@ -42,7 +42,7 @@ function handleSearch() {
           <div class="px-2 font-bold text-xl sm:text-2xl">AIFriends</div>
         </div>
 
-        <div class="navbar-center mx-2 hidden min-w-0 max-w-[480px] flex-1 sm:flex">
+        <div class="navbar-center mx-2 hidden min-w-0 w-[42%] max-w-[480px] sm:flex">
           <form @submit.prevent="handleSearch" class="flex items-center w-full rounded-full overflow-hidden border border-gray-300 bg-white shadow-sm hover:shadow-md transition-shadow">
             <input v-model="searchQuery"
               class="input flex-1 border-none outline-none px-4 py-2.5 text-base focus:ring-0"
@@ -68,7 +68,18 @@ function handleSearch() {
         </div>
 
       </nav>
-      <!-- Page content here -->
+
+      <!-- 移动端搜索栏（<sm 显示，单独一行） -->
+      <form @submit.prevent="handleSearch" class="sm:hidden flex items-center mx-3 mt-2 mb-1 rounded-full overflow-hidden border border-gray-300 bg-white shadow-sm">
+        <input v-model="searchQuery"
+          class="input flex-1 border-none outline-none px-4 py-2 text-base focus:ring-0"
+          placeholder="搜索你感兴趣的内容"
+        />
+        <button type="submit" class="btn bg-gray-100 hover:bg-gray-200 text-gray-700 border-none rounded-none px-4 py-2">
+          <SearchIcon class="w-4 h-4 mr-1"/>
+          搜索
+        </button>
+      </form>      <!-- Page content here -->
       <slot>  </slot>
 
     </div>
