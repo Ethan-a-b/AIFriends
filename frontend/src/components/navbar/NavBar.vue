@@ -39,10 +39,10 @@ function handleSearch() {
           <label for="my-drawer-4" aria-label="open sidebar" class="btn btn-square btn-ghost drawer-button">
            <MenuIcon/>
           </label>
-          <div class="px-2 font-bold text-2xl">AIFriends</div>
+          <div class="px-2 font-bold text-xl sm:text-2xl">AIFriends</div>
         </div>
 
-        <div class="navbar-center w-4/5 max-w-[480px] ml-4">
+        <div class="navbar-center mx-2 hidden min-w-0 max-w-[480px] flex-1 sm:flex">
           <form @submit.prevent="handleSearch" class="flex items-center w-full rounded-full overflow-hidden border border-gray-300 bg-white shadow-sm hover:shadow-md transition-shadow">
             <input v-model="searchQuery"
               class="input flex-1 border-none outline-none px-4 py-2.5 text-base focus:ring-0"

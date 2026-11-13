@@ -66,10 +66,10 @@ async function openChatField() {
 </script>
 
 <template>
-  <div>
-    <div class="avatar cursor-pointer" @mouseover="isHover=true" @mouseout="isHover=false" @click="openChatField">
+  <div class="min-w-0 w-full">
+    <div class="avatar w-full cursor-pointer" @mouseover="isHover=true" @mouseout="isHover=false" @click="openChatField">
       <!-- 1. 给外层卡片加上 overflow-hidden，防止图片放大时溢出圆角 -->
-      <div class="w-60 h-100 rounded-2xl relative overflow-hidden bg-gray-100">
+      <div class="w-full h-64 sm:w-60 sm:h-100 rounded-2xl relative overflow-hidden bg-gray-100">
 
         <!-- 背景图 -->
         <img :src="character.background_image" class="w-full h-full object-cover transition-transform duration-300" :class="{'scale-120':isHover}" alt="">
@@ -97,24 +97,24 @@ async function openChatField() {
           <!-- 头像和名字横向排列 -->
           <div class="flex items-center gap-3">
             <!-- 头像 -->
-            <div class="w-16 h-16 rounded-full ring-2 ring-white overflow-hidden bg-white shrink-0 shadow-sm">
+            <div class="w-11 h-11 sm:w-16 sm:h-16 rounded-full ring-2 ring-white overflow-hidden bg-white shrink-0 shadow-sm">
               <img :src="character.photo" class="w-full h-full object-cover" alt="avatar">
             </div>
             <!-- 名字 (由于背景变浅，文字改成深色) -->
-            <div class="text-xl font-bold text-gray-800 line-clamp-1 break-all">
+            <div class="min-w-0 flex-1 text-base sm:text-xl font-bold text-gray-800 line-clamp-1 break-all">
               {{ character.name }}
             </div>
           </div>
 
           <!-- 简介 (放在头像下方) -->
-          <div class="mt-3 text-sm text-gray-700 line-clamp-3 break-all leading-relaxed">
+          <div class="mt-2 sm:mt-3 text-xs sm:text-sm text-gray-700 line-clamp-2 sm:line-clamp-3 break-all leading-relaxed">
             {{ character.profile }}
           </div>
 
         </div>
       </div>
     </div>
-    <RouterLink :to="{name: 'user-space-index',params:{user_id: character.author.user_id}}" class="flex items-center mt-4 gap-2 w-60 cursor-pointer">
+    <RouterLink :to="{name: 'user-space-index',params:{user_id: character.author.user_id}}" class="flex items-center mt-3 sm:mt-4 gap-2 w-full sm:w-60 cursor-pointer">
       <div class="avatar">
         <div class="w-7 rounded-full">
           <img :src="character.author.photo" alt="">
