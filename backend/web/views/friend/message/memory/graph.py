@@ -12,7 +12,7 @@ class MemoryGraph:
     @staticmethod
     def create_app():
         llm = ChatOpenAI(
-            model='deepseek-v4-pro',
+            model='deepseek-v4.1-flash',
             openai_api_key=os.getenv('API_KEY'),
             openai_api_base=os.getenv('API_BASE'),
         )

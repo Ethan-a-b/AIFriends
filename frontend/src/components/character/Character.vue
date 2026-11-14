@@ -84,7 +84,7 @@ async function openChatField() {
           </button>
         </div>
 
-        <div v-if="canRemoveFriend" class="absolute right-0 top-50">
+        <div v-if="canRemoveFriend" class="absolute right-2 top-2 z-30">
           <button @click.stop="handleRemoveFriend" class="btn btn-circle btn-ghost bg-black/30 hover:bg-black/50 text-white backdrop-blur-sm">
             <RemoveIcon />
           </button>

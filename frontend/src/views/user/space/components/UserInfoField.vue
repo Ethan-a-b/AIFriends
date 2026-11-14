@@ -1,3 +1,7 @@
+<script setup>
+defineProps(['userProfile'])
+</script>
+
 <template>
   <div v-if="userProfile" class="flex flex-col sm:flex-row items-center sm:items-start mt-8 sm:mt-12 gap-4 sm:gap-0 px-4 sm:px-0 w-full">
     <div class="avatar shrink-0">
